@@ -73,10 +73,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=log
 
 # Gapps
-ifeq ($(USE_GAPPS),true)
-$(call inherit-product, vendor/gapps/gapps.mk)
-endif
-
+$(call inherit-product, vendor/awaken/config/gapps.mk)
 
 # Include AOSP audio files
 include vendor/awaken/config/aosp_audio.mk
